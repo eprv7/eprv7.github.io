@@ -27,9 +27,9 @@
 
     try {
       const places = [
-        { coords: [45.5297, -73.6175], icon: '🪐', popup: '<b>Campus MIL</b><br>Conference venue' },
-        { coords: [45.5598, -73.5496], icon: '🌠', popup: '<b>Planétarium de Montréal</b><br>Opening reception' },
-        { coords: [45.5049, -73.6153], icon: '🛏️', popup: '<b>UdeM Residences (Édouard-Montpetit)</b><br>Budget lodging' }
+        { coords: [45.5222818, -73.6200633], icon: '🪐', popup: '<b>Campus MIL</b><br>Conference venue' },
+        { coords: [45.5606668, -73.55057], icon: '🌠', popup: '<b>Planétarium de Montréal</b><br>Opening reception' },
+        { coords: [45.50669, -73.6137493], icon: '🛏️', popup: '<b>UdeM Residences (Next to CEPSUM)</b><br>Budget lodging' }
       ];
 
       const map = L.map('map', {
