@@ -1,0 +1,178 @@
+push graphic-context
+fill #ffd9b3
+polygon 0,1100 0,1000 400,960 800,980 1200,1000 1600,940 2000,960 2400,900 2400,1400 0,1400
+pop graphic-context
+
+push graphic-context
+fill none
+stroke #f6caa4
+stroke-width 2
+line 0,300 2400,300
+line 0,500 2400,500
+line 300,0 300,800
+line 800,0 800,800
+line 1300,0 1300,800
+line 1800,0 1800,800
+pop graphic-context
+
+push graphic-context
+fill none
+stroke #ffb078
+stroke-width 10
+ellipse 1900,420 360,110 180 360
+ellipse 1900,420 390,118 180 360
+pop graphic-context
+
+push graphic-context
+fill #ffe5cf
+stroke #ffc8a3
+stroke-width 6
+circle 1900,420 2120,420
+pop graphic-context
+
+push graphic-context
+fill none
+stroke #ffb078
+stroke-width 10
+ellipse 1900,420 360,110 0 180
+ellipse 1900,420 390,118 0 180
+pop graphic-context
+
+push graphic-context
+fill none
+stroke #f5b746
+stroke-width 8
+ellipse 420,260 130,40 180 360
+pop graphic-context
+
+push graphic-context
+fill #ffd7b8
+stroke #ffb078
+stroke-width 3
+circle 420,260 520,260
+pop graphic-context
+
+push graphic-context
+fill none
+stroke #f5b746
+stroke-width 8
+ellipse 420,260 130,40 0 180
+pop graphic-context
+
+push graphic-context
+fill none
+stroke #f59a64
+stroke-width 6
+ellipse 1100,320 90,26 180 360
+pop graphic-context
+
+push graphic-context
+fill #ffb078
+stroke none
+circle 1100,320 1170,320
+pop graphic-context
+
+push graphic-context
+fill none
+stroke #f59a64
+stroke-width 6
+ellipse 1100,320 90,26 0 180
+pop graphic-context
+
+push graphic-context
+fill none
+stroke #ffb078
+stroke-width 3
+polyline 520,880 600,820 680,880 760,820 840,880 920,820 1000,880
+line 520,880 1000,880
+pop graphic-context
+
+push graphic-context
+fill #ffe5cf
+stroke #ffc8a3
+stroke-width 3
+circle 350,980 430,980
+pop graphic-context
+
+push graphic-context
+fill #ffe5cf
+stroke #ffc8a3
+stroke-width 3
+rectangle 620,980 740,1050
+rectangle 710,940 830,1010
+rectangle 800,980 920,1050
+rectangle 680,1030 800,1100
+pop graphic-context
+
+push graphic-context
+fill #ffe5cf
+stroke #ffc8a3
+stroke-width 3
+rectangle 1220,960 1400,1120
+rectangle 1420,920 1520,1140
+rectangle 1540,980 1680,1120
+rectangle 1700,940 1800,1160
+rectangle 1820,1010 1900,1120
+rectangle 1940,920 2060,1180
+pop graphic-context
+
+push graphic-context
+fill #ffe5cf
+stroke #ffc8a3
+stroke-width 3
+rectangle 730,970 930,1040
+pop graphic-context
+
+push graphic-context
+fill #ffd9b3
+stroke #ffc8a3
+stroke-width 3
+polygon 780,930 880,930 880,880 780,880
+pop graphic-context
+
+push graphic-context
+fill none
+stroke #ffb078
+stroke-width 5
+line 520,860 520,920
+line 500,890 540,890
+pop graphic-context
+
+push graphic-context
+fill #ffe5cf
+stroke #ffc8a3
+stroke-width 3
+rectangle 1180,800 1320,860
+pop graphic-context
+
+push graphic-context
+fill none
+stroke #ffb078
+stroke-width 3
+line 1200,780 1200,800
+line 1300,780 1300,800
+line 1200,760 1300,760
+line 1210,740 1260,740
+line 1280,740 1315,740
+pop graphic-context
+
+push graphic-context
+fill #ffe5cf
+stroke #ffc8a3
+stroke-width 3
+polygon 1860,680 1930,920 1990,920 1890,640
+pop graphic-context
+
+push graphic-context
+fill none
+stroke #ffc8a3
+stroke-width 3
+rectangle 1420,890 1540,940
+pop graphic-context
+
+push graphic-context
+fill none
+stroke #ff9f68
+stroke-width 5
+polyline 0,520 150,460 300,580 450,520 600,460 750,580 900,520 1050,460 1200,580 1350,520 1500,460 1650,580 1800,520 1950,460 2100,580 2250,520 2400,520
+pop graphic-context

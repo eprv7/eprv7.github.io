@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1400" viewBox="0 0 2400 1400" role="img" aria-label="Cartoon planets over a stylized Montreal skyline with warm sunrise colors">
+  <defs>
+    <linearGradient id="sunrise" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff1dc"/>
+      <stop offset="55%" stop-color="#ffe2c2"/>
+      <stop offset="100%" stop-color="#ffe8b8"/>
+    </linearGradient>
+    <linearGradient id="riverWarm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffd3a1"/>
+      <stop offset="100%" stop-color="#ffc687"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#sunrise)"/>
+
+  <!-- Subtle analysis vibe: faint grid -->
+  <g stroke="#f6caa4" stroke-opacity="0.35" stroke-width="1">
+    <g>
+      <line x1="0" y1="160" x2="2400" y2="160"/>
+      <line x1="0" y1="320" x2="2400" y2="320"/>
+      <line x1="0" y1="480" x2="2400" y2="480"/>
+    </g>
+    <g>
+      <line x1="300" y1="0" x2="300" y2="700"/>
+      <line x1="800" y1="0" x2="800" y2="700"/>
+      <line x1="1300" y1="0" x2="1300" y2="700"/>
+      <line x1="1800" y1="0" x2="1800" y2="700"/>
+    </g>
+  </g>
+
+  <!-- Cartoon big planet with proper ring occlusion -->
+  <g transform="translate(1780,300)">
+    <!-- back ring (behind planet) -->
+    <g transform="rotate(-18)">
+      <ellipse rx="370" ry="115" fill="none" stroke="#ffb078" stroke-width="10" opacity="0.45"/>
+    </g>
+    <!-- planet body (opaque) -->
+    <radialGradient id="orangePlanet" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#ffe6cc"/>
+      <stop offset="70%" stop-color="#ff9a66"/>
+      <stop offset="100%" stop-color="#ff7a3d"/>
+    </radialGradient>
+    <circle r="230" fill="url(#orangePlanet)"/>
+    <!-- funny craters -->
+    <g fill="#ffc39b" opacity="0.75">
+      <circle cx="-80" cy="-40" r="24"/>
+      <circle cx="50" cy="-90" r="18"/>
+      <circle cx="90" cy="40" r="28"/>
+      <circle cx="-40" cy="70" r="16"/>
+      <circle cx="-10" cy="-8" r="12"/>
+    </g>
+    <g fill="none" stroke="#ffb078" stroke-width="3" opacity="0.55">
+      <path d="M-84 -42 q12 10 24 0 q-12 -10 -24 0"/>
+      <path d="M48 -92 q10 10 20 0 q-10 -10 -20 0"/>
+      <path d="M88 44 q12 12 24 0 q-12 -12 -24 0"/>
+      <path d="M-42 74 q10 10 18 -2 q-8 -10 -18 2"/>
+      <path d="M-12 -6 q8 9 16 -1 q-8 -9 -16 1"/>
+    </g>
+    <!-- front ring (only front half visible) -->
+    <g transform="rotate(-18)">
+      <mask id="frontHalfMask">
+        <rect x="-500" y="-300" width="1000" height="600" fill="black"/>
+        <!-- reveal lower half as "front" after rotation -->
+        <rect x="-500" y="0" width="1000" height="300" fill="white"/>
+      </mask>
+      <ellipse rx="370" ry="115" fill="none" stroke="#ffb078" stroke-width="10" opacity="0.85" mask="url(#frontHalfMask)"/>
+    </g>
+  </g>
+
+  <!-- Smaller cartoon planet -->
+  <g transform="translate(360,200)">
+    <radialGradient id="yellowPlanet" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff5cc"/>
+      <stop offset="80%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#ffb703"/>
+    </radialGradient>
+    <circle r="90" fill="url(#yellowPlanet)"/>
+    <circle cx="-22" cy="-12" r="10" fill="#ffe7a1" opacity="0.9"/>
+    <circle cx="18" cy="20" r="8" fill="#ffe7a1" opacity="0.8"/>
+    <circle cx="-8" cy="34" r="7" fill="#ffd98a" opacity="0.85"/>
+    <g fill="none" stroke="#f5b746" stroke-width="2" opacity="0.6">
+      <path d="M-24 -12 q8 8 16 0 q-8 -8 -16 0"/>
+      <path d="M16 22 q6 6 12 -1 q-6 -6 -12 1"/>
+      <path d="M-8 36 q6 6 12 -1 q-6 -6 -12 1"/>
+    </g>
+  </g>
+
+  <!-- Extra small planet with craters -->
+  <g transform="translate(1080,260)">
+    <radialGradient id="peachPlanet" cx="45%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff2e2"/>
+      <stop offset="80%" stop-color="#ffb088"/>
+      <stop offset="100%" stop-color="#ff9462"/>
+    </radialGradient>
+    <circle r="70" fill="url(#peachPlanet)"/>
+    <g fill="#ffd7b8" opacity="0.8">
+      <circle cx="-12" cy="-8" r="12"/>
+      <circle cx="20" cy="16" r="10"/>
+      <circle cx="-18" cy="26" r="8"/>
+    </g>
+    <g fill="none" stroke="#f59a64" stroke-width="2" opacity="0.6">
+      <path d="M-14 -8 q7 6 14 0 q-7 -6 -14 0"/>
+      <path d="M18 18 q6 6 12 0 q-6 -6 -12 0"/>
+      <path d="M-18 28 q6 6 12 -1 q-6 -6 -12 1"/>
+    </g>
+  </g>
+
+  <!-- Faint RV-like wave in the sky (for theme) -->
+  <path d="M0,420 C150,360 300,480 450,420 C600,360 750,480 900,420 C1050,360 1200,480 1350,420 C1500,360 1650,480 1800,420 C1950,360 2100,480 2250,420 L2400,420" fill="none" stroke="#ff9f68" stroke-width="4" stroke-opacity="0.35" filter="url(#softGlow)"/>
+  <!-- jitter dots along the wave -->
+  <g fill="#ff9f68" opacity="0.35">
+    <circle cx="120" cy="410" r="3"/>
+    <circle cx="260" cy="470" r="2.5"/>
+    <circle cx="380" cy="430" r="2.8"/>
+    <circle cx="520" cy="390" r="2.3"/>
+    <circle cx="660" cy="455" r="2.6"/>
+    <circle cx="820" cy="435" r="2.5"/>
+    <circle cx="980" cy="400" r="2.9"/>
+    <circle cx="1140" cy="460" r="2.4"/>
+    <circle cx="1300" cy="430" r="2.7"/>
+    <circle cx="1460" cy="395" r="2.5"/>
+    <circle cx="1620" cy="455" r="2.5"/>
+    <circle cx="1780" cy="435" r="2.7"/>
+    <circle cx="1940" cy="395" r="2.4"/>
+    <circle cx="2100" cy="455" r="2.6"/>
+  </g>
+
+  <!-- Stylized Montreal skyline in warm tones -->
+  <g transform="translate(0,900)">
+    <!-- Mount Royal slope -->
+    <path d="M0,120 C400,40 700,70 980,110 C1200,140 1450,110 1700,60 C2000,0 2200,40 2400,80 L2400,500 L0,500 Z" fill="#ffd9b3"/>
+
+    <!-- Biosphere (geodesic dome) -->
+    <g transform="translate(300,40)" fill="none" stroke="#ffb078">
+      <circle cx="0" cy="0" r="70" stroke-width="2"/>
+      <circle cx="0" cy="0" r="65" stroke-width="1.2" opacity="0.7"/>
+      <circle cx="0" cy="0" r="55" stroke-width="1" opacity="0.5"/>
+    </g>
+
+    <!-- Habitat 67 blocks (abstract) -->
+    <g transform="translate(560,20)" fill="#ffe5cf" stroke="#ffc8a3" stroke-width="2">
+      <rect x="0" y="0" width="120" height="70" rx="6"/>
+      <rect x="90" y="-40" width="120" height="70" rx="6"/>
+      <rect x="180" y="0" width="120" height="70" rx="6"/>
+      <rect x="60" y="50" width="120" height="70" rx="6"/>
+    </g>
+
+    <!-- Saint Joseph's Oratory (dome + base) -->
+    <g transform="translate(760,-10)" fill="#ffe5cf" stroke="#ffc8a3" stroke-width="2">
+      <rect x="-50" y="40" width="100" height="70" rx="10"/>
+      <path d="M-30,40 C-30,10 30,10 30,40 Z" fill="#ffd9b3"/>
+      <path d="M-12,12 C-12,-10 12,-10 12,12 Z" fill="#ffc8a3" stroke="#ffc8a3"/>
+      <rect x="-14" y="40" width="28" height="16" fill="#ffc8a3"/>
+    </g>
+
+    <!-- Mount Royal cross -->
+    <g transform="translate(520,-20)" stroke="#ffb078" stroke-width="4" stroke-linecap="round">
+      <line x1="0" y1="0" x2="0" y2="60"/>
+      <line x1="-14" y1="22" x2="14" y2="22"/>
+    </g>
+
+    <!-- Jacques Cartier Bridge (simplified) -->
+    <g transform="translate(980,10)" stroke="#ffb078" stroke-width="3" fill="none">
+      <path d="M0,60 L420,60"/>
+      <path d="M0,60 L70,10 L140,60 L210,10 L280,60 L350,10 L420,60"/>
+    </g>
+
+    <!-- Farine Five Roses sign (minimal) -->
+    <g transform="translate(1180,-70)" fill="none" stroke="#ffb078" stroke-width="2">
+      <rect x="-30" y="0" width="120" height="40" rx="4" fill="#ffe5cf"/>
+      <line x1="-22" y1="-14" x2="-22" y2="0"/>
+      <line x1="94" y1="-14" x2="94" y2="0"/>
+      <line x1="-10" y1="-20" x2="82" y2="-20"/>
+      <line x1="-6" y1="-26" x2="26" y2="-26"/>
+      <line x1="44" y1="-26" x2="76" y2="-26"/>
+    </g>
+
+    <!-- Olympic Stadium tower (tilted) -->
+    <g transform="translate(1860,-30) rotate(-12)" fill="#ffe5cf" stroke="#ffc8a3" stroke-width="2">
+      <path d="M-30,120 L30,240 L70,240 L10,40 Z"/>
+      <rect x="-10" y="120" width="40" height="14" fill="#ffc8a3"/>
+      <rect x="-6" y="150" width="36" height="12" fill="#ffc8a3"/>
+      <rect x="-2" y="180" width="28" height="12" fill="#ffc8a3"/>
+    </g>
+
+    <!-- Generic skyline buildings -->
+    <g fill="#ffe7d3" stroke="#ffc8a3" stroke-width="2">
+      <rect x="1150" y="-40" width="80" height="160" rx="8"/>
+      <rect x="1245" y="-80" width="70" height="200" rx="8"/>
+      <rect x="1325" y="-20" width="110" height="140" rx="8"/>
+      <rect x="1450" y="-60" width="90" height="180" rx="8"/>
+      <rect x="1550" y="-30" width="70" height="150" rx="8"/>
+      <rect x="1635" y="-100" width="120" height="220" rx="8"/>
+    </g>
+  </g>
+
+  <!-- Saint Lawrence river reflection -->
+  <rect x="0" y="1080" width="2400" height="320" fill="url(#riverWarm)" opacity="0.7"/>
+  <g opacity="0.2" fill="#ffb078">
+    <rect x="1150" y="1080" width="80" height="80"/>
+    <rect x="1245" y="1080" width="70" height="100"/>
+    <rect x="1325" y="1080" width="110" height="70"/>
+    <rect x="1450" y="1080" width="90" height="90"/>
+    <rect x="1550" y="1080" width="70" height="75"/>
+    <rect x="1635" y="1080" width="120" height="110"/>
+  </g>
+</svg>

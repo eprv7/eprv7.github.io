@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EPRV 7 — Montréal</title>
+  <meta name="description" content="The 7th Workshop on Extremely Precise Radial Velocities (EPRV 7) at Campus MIL, Montréal, Canada. June 14–18, 2027.">
+  <meta property="og:title" content="EPRV 7 — Montréal">
+  <meta property="og:description" content="Campus MIL, Montréal, Canada • June 14–18, 2027">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/bg.svg">
+  <meta name="theme-color" content="#fff4e6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/bg.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Primary">
+      <div class="nav-left">
+        <div class="brand">
+          <div class="brand-badge" aria-hidden="true">🪐</div>
+          <div>
+            <div class="brand-title">EPRV 7</div>
+            <div class="brand-sub">Montréal • Campus MIL</div>
+          </div>
+        </div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#logistics">Logistics</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#registration">Registration</a></li>
+        <li><a href="#committees">LOC & SOC</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" role="region" aria-labelledby="hero-title">
+      <div class="hero-foreground">
+        <h1 id="hero-title">The 7th Workshop on Extremely Precise Radial Velocities</h1>
+        <div class="meta">Campus MIL, Montréal, Canada • June 14–18, 2027</div>
+        <div class="cta">
+          <a class="button" href="#registration">Get Updates</a>
+          <a class="button secondary" href="#about">Learn More</a>
+        </div>
+      </div>
+      <!-- RV sinusoid-with-noise chart, softened into the background -->
+      <div class="rv-chart" aria-hidden="true">
+        <svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="smallGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+              <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#f7d9c1" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="900" height="220" fill="#fffaf4"/>
+          <rect width="900" height="220" fill="url(#smallGrid)" opacity="0.45"/>
+          <line x1="0" y1="110" x2="900" y2="110" class="axis"/>
+          <path class="curve" d="M0,110 C75,70 150,150 225,110 C300,70 375,150 450,110 C525,70 600,150 675,110 C750,70 825,150 900,110"/>
+          <g class="points">
+            <circle cx="30" cy="106" r="4"/>
+            <circle cx="60" cy="121" r="3.5"/>
+            <circle cx="90" cy="98" r="3.5"/>
+            <circle cx="120" cy="127" r="3.5"/>
+            <circle cx="150" cy="96" r="3.5"/>
+            <circle cx="180" cy="118" r="3.5"/>
+            <circle cx="210" cy="108" r="3.5"/>
+            <circle cx="240" cy="100" r="3.5"/>
+            <circle cx="270" cy="132" r="3.5"/>
+            <circle cx="300" cy="95" r="3.5"/>
+            <circle cx="330" cy="126" r="3.5"/>
+            <circle cx="360" cy="100" r="3.5"/>
+            <circle cx="390" cy="120" r="3.5"/>
+            <circle cx="420" cy="110" r="3.5"/>
+            <circle cx="450" cy="105" r="3.5"/>
+            <circle cx="480" cy="94" r="3.5"/>
+            <circle cx="510" cy="130" r="3.5"/>
+            <circle cx="540" cy="100" r="3.5"/>
+            <circle cx="570" cy="122" r="3.5"/>
+            <circle cx="600" cy="110" r="3.5"/>
+            <circle cx="630" cy="98" r="3.5"/>
+            <circle cx="660" cy="126" r="3.5"/>
+            <circle cx="690" cy="109" r="3.5"/>
+            <circle cx="720" cy="100" r="3.5"/>
+            <circle cx="750" cy="121" r="3.5"/>
+            <circle cx="780" cy="96" r="3.5"/>
+            <circle cx="810" cy="118" r="3.5"/>
+            <circle cx="840" cy="108" r="3.5"/>
+            <circle cx="870" cy="112" r="3.5"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="cards">
+        <article class="card full">
+          <div class="kicker">Welcome</div>
+          <h2 id="about-title">EPRV 7 in Montreal</h2>
+          <p>
+            EPRV 7 brings together the global community advancing extreme precision radial velocity measurements for exoplanet discovery and characterization. Building on the momentum of recent instrument deployments, improved mitigation of stellar variability, and modern data analysis techniques, this workshop will highlight progress and chart the path toward Earth-analog sensitivity.
+          </p>
+          <p>
+            Following the tradition of previous meetings, EPRV 7 will combine invited talks, contributed presentations, posters, and ample time for discussion to foster collaboration across instrumentation, stellar physics, data analysis, and heliophysics.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Topics</h3>
+          <ul>
+            <li>New instrumentation: design, calibration, and stability</li>
+            <li>Data reduction, pipelines, and post-processing</li>
+            <li>Stellar and solar variability; mitigation methods</li>
+            <li>Statistical modeling and machine learning for RV</li>
+            <li>Time-series spectroscopy and telluric correction</li>
+            <li>Recent science results from high-resolution spectroscopy</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Hosts & Leads</h3>
+          <p>Hosted by Université de Montréal (Campus MIL) in partnership with the Planétarium de Montréal.</p>
+          <p>Lead scientists: Étienne Artigau & Nathalie Ouellette (iREx, Département de physique, Université de Montréal).</p>
+          <p>June 14–18, 2027 • Monday–Thursday program with Wednesday afternoon free; Friday available for team or town-hall meetings.</p>
+          <p>Maximum attendance: 200 participants in person.</p>
+        </article>
+
+        <article class="card">
+          <h3>Format</h3>
+          <p>
+            EPRV 7 is planned as an in-person event with support for remote participation. Sessions may be recorded and shared with presenter permission.
+          </p>
+          <p>
+            The scientific program will be guided by an international SOC, with a local organizing committee hosting at Campus MIL.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="venue" class="section" aria-labelledby="venue-title">
+      <div class="cards">
+        <article class="card full venue-split">
+          <div class="venue-text">
+            <div class="kicker">Location</div>
+            <h2 id="venue-title">Campus MIL, Université de Montréal</h2>
+            <p>
+              EPRV 7 will be hosted at Campus MIL in Montréal. The teaching wing offers modern lecture halls and collaborative spaces with natural light and easy subway access.
+            </p>
+            <p>
+              Co-organised by <a href="https://www.exoplanetes.umontreal.ca/en/" target="_blank" rel="noopener">iREx (Trottier Institute for Research on Exoplanets)</a> and <a href="https://espacepourlavie.ca/en/planetarium" target="_blank" rel="noopener">Planétarium de Montréal</a>.
+            </p>
+            <p>
+              Explore Campus MIL: <a href="https://campusmil.umontreal.ca/" rel="noopener" target="_blank">campusmil.umontreal.ca</a>
+            </p>
+          </div>
+          <div class="venue-map">
+            <div id="map" class="map-container"></div>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Accessibility & Hybrid</h3>
+          <ul>
+            <li>Campus and metro station have elevators.</li>
+            <li>Remote attendance supported (reduced cost); remote questions via Slack.</li>
+            <li>We strongly prefer in-person presentations.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Travel & Lodging</h3>
+          <ul>
+            <li>International arrivals via YUL; express bus and taxis to downtown.</li>
+            <li>Easy STM metro access (Outremont station, Blue line, elevator-equipped).</li>
+            <li>Affordable university residences one metro stop away; hotel options via subway across the city.</li>
+            <li>Group-rate week-long transit passes planned; bike-share (BIXI) nearby.</li>
+            <li>Letters for visa support available on request.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="logistics" class="section" aria-labelledby="logistics-title">
+      <div class="cards">
+        <article class="card">
+          <div class="kicker">Getting Here</div>
+          <h2 id="logistics-title">Logistics</h2>
+          <ul>
+            <li>Arrivals via YUL Montréal–Trudeau; express bus to downtown, taxis available.</li>
+            <li>STM metro: Outremont station (Blue line) with elevators; 1 stop from dorms, ~30–40 min from downtown hotels.</li>
+            <li>Bike share (BIXI) and dedicated bike paths near Campus MIL.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Lodging</h3>
+          <ul>
+            <li>University residences one metro stop away (block booking planned).</li>
+            <li>Hotel options across the city via metro; recommendations coming soon.</li>
+            <li>UdeM Residences (Édouard-Montpetit) for budget stays; short Blue line hop to Campus MIL.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>On-site</h3>
+          <ul>
+            <li>Campus-wide eduroam and fast Wi‑Fi.</li>
+            <li>Hybrid access focused on remote viewing and Q&A.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="program" class="section" aria-labelledby="program-title">
+      <div class="cards">
+        <article class="card full">
+          <div class="kicker">Themes</div>
+          <h2 id="program-title">Program Themes</h2>
+          <p>
+            The program will feature invited reviews, contributed talks, posters, and open discussions organized around the topics above. This meeting is designed for discussion of ongoing challenges in the field. We encourage speakers to highlight the limitations they encounter in their work and foster constructive discussion to advance the community forward. A detailed agenda and speaker list will be posted when available.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="committees" class="section" aria-labelledby="committees-title">
+      <div class="cards">
+        <article class="card full">
+          <div class="kicker">People</div>
+          <h2 id="committees-title">LOC & SOC</h2>
+          <p>Local Organizing Committee (in progress): Nathalie Ouellette, Étienne Artigau, and additional members to be confirmed.</p>
+          <p>Science Organizing Committee: to be announced. Placeholder for composition will appear here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="cards">
+        <article class="card">
+          <div class="kicker">Welcome</div>
+          <h2 id="experience-title">Planetarium Reception</h2>
+          <p>
+            Opening evening at the <a href="https://espacepourlavie.ca/en/planetarium" target="_blank" rel="noopener">Planétarium de Montréal</a> with cocktail-style reception and dome shows. Easy metro ride from Campus MIL.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Free Afternoon (Wednesday)</h3>
+          <p>Explore Montréal's "Espace pour la vie": <a href="https://espacepourlavie.ca/en/botanical-garden" target="_blank" rel="noopener">Botanical Garden</a>, <a href="https://espacepourlavie.ca/en/biodome" target="_blank" rel="noopener">Biodome</a>, <a href="https://espacepourlavie.ca/en/insectarium" target="_blank" rel="noopener">Insectarium</a>, <a href="https://espacepourlavie.ca/en/planetarium" target="_blank" rel="noopener">Planetarium</a>, or join guided bike/eco tours. Other museums and festivals are nearby for self-guided visits.</p>
+        </article>
+        <article class="card">
+          <h3>Community Friday</h3>
+          <p>Friday reserved for team meetings or town halls; rooms of various sizes available upon request.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="registration" class="section" aria-labelledby="registration-title">
+      <div class="cards">
+        <article class="card">
+          <div class="kicker">Participate</div>
+          <h2 id="registration-title">Registration</h2>
+          <p>
+            Registration tiers and a link to the registration portal will appear here once available. Expected options include in-person and remote attendance. Costs are still being finalized.
+          </p>
+          <p>
+            Interested in updates? Email us and we’ll notify you when registration and abstract submission open.
+          </p>
+          <p>
+            <a class="button" href="mailto:eprv7@umontreal.ca?subject=EPRV7%20Updates&body=Hello%20EPRV7%20team%2C%0D%0A%0D%0APlease%20notify%20me%20when%20registration%20and%20abstract%20submission%20open.%0D%0A%0D%0AName%3A%20%0D%0AAffiliation%3A%20%0D%0AIn-person%20or%20Remote%3A%20%0D%0A">Email for updates</a>
+          </p>
+        </article>
+        <article class="card">
+          <h3>Previous Workshops</h3>
+          <ul>
+            <li><a href="https://www.iastro.pt/research/conferences/eprv6/" target="_blank" rel="noopener">EPRV 6 (2025) — Porto, Portugal</a></li>
+            <li><a href="https://conference.ipac.caltech.edu/eprv5" target="_blank" rel="noopener">EPRV 5 (2023) — Santa Barbara, USA</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="cards">
+        <article class="card full">
+          <div class="kicker">Get in touch</div>
+          <h2 id="contact-title">Contact</h2>
+          <p>
+            Questions about EPRV 7? Please email <a href="mailto:eprv7@umontreal.ca">eprv7@umontreal.ca</a>.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        © EPRV 7. Montréal, Canada.
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
