@@ -15,7 +15,7 @@
 }
 
 * { box-sizing: border-box; }
-html, body { height: 100%; }
+html, body { min-height: 100%; }
 body {
   margin: 0;
   color: var(--text);
@@ -47,8 +47,9 @@ a:hover { text-decoration: underline; }
   top: 0;
   z-index: 10;
   backdrop-filter: blur(8px);
-  background: linear-gradient(180deg, #ffffffd9, #ffffff80 60%, #ffffff00);
-  border-bottom: 1px solid #00000010;
+  background: linear-gradient(180deg, rgba(255, 252, 248, 0.97), rgba(255, 250, 244, 0.92));
+  border-bottom: 1px solid #00000012;
+  box-shadow: 0 6px 18px rgba(180, 120, 70, 0.10);
 }
 
 .nav {
