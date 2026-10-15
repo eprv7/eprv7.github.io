@@ -83,7 +83,7 @@ h2 {
 }
 
 .brand-badge {
-  width: 48px; height: 32px;
+  width: 60px; height: 40px;
   /*border-radius: 10px;*/
   display: grid; place-items: center;
   /*background: radial-gradient(120% 120% at 50% -10%, #ffe3c2, #ff8a65);*/
