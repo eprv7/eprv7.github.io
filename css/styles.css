@@ -43,6 +43,11 @@ body {
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+h2 {
+  font-family: 'Changa One', system-ui, sans-serif;
+  font-weight: 400;
+}
+
 .header {
   position: sticky;
   top: 0;
