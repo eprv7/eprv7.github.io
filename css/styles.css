@@ -77,12 +77,17 @@ a:hover { text-decoration: underline; }
   font-family: 'Changa One', system-ui, sans-serif;
 }
 
-.brand-badge {
+/*.brand-badge {
   width: 36px; height: 36px;
   border-radius: 10px;
   display: grid; place-items: center;
   background: radial-gradient(120% 120% at 50% -10%, #ffe3c2, #ff8a65);
   box-shadow: 0 6px 18px #ff8a6540, inset 0 0 14px #ffd8a655;
+}*/
+.brand-badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .brand-title { font-weight: 800; letter-spacing: 0.2px; }
