@@ -83,19 +83,20 @@ h2 {
 }
 
 .brand-badge {
-  width: 60px; height: 40px;
+  width: auto; height: 40px;
   /*border-radius: 10px;*/
-  display: grid; place-items: center;
+  display: flex; place-items: center;
   /*background: radial-gradient(120% 120% at 50% -10%, #ffe3c2, #ff8a65);*/
   /*box-shadow: 0 6px 18px #ff8a6540, inset 0 0 14px #ffd8a655;*/
 }
 
 .brand-badge img {
-  width: 100%;
+  width: auto;
   height: 100%;
   /*min-width: 0;
   min-height: 0;*/
-  object-fit: contain;
+  /*object-fit: contain;*/
+  display: block;
 }
 
 .brand-title { font-weight: 800; letter-spacing: 0.2px; }
