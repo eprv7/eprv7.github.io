@@ -250,6 +250,7 @@ h2 {
   height: 340px;
   border-radius: 12px;
   overflow: hidden;
+  isolation: isolate;
 }
 
 #map {
