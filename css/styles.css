@@ -194,19 +194,19 @@ h2 {
 }*/
 .button {
   display: inline-flex; align-items: center; gap: 10px;
-  background: linear-gradient(135deg, #39878b80, #294e7180);
+  background: linear-gradient(135deg, #66b2b6, #597ca2);
   color: var(--text);
   border: none;
   padding: 12px 16px;
   border-radius: 12px;
   font-weight: 700;
-  box-shadow: 0 8px 24px #4dade980;
+  box-shadow: 0 8px 24px #4dade933;
 }
 .button.secondary {
   background: #fff; color: var(--text);
   border: 1px solid #00000010;
 }
-.button:hover { transform: translateY(-1px); box-shadow: 0 10px 30px #4dade950; }
+.button:hover { transform: translateY(-1px); box-shadow: 0 10px 30px #4dade933; }
 
 .section {
   max-width: 1100px;
