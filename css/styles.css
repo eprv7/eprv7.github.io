@@ -156,9 +156,9 @@ h2 {
   margin-bottom: 14px;
   padding: 6px 14px;
   border-radius: 999px;
-  background: #ffffffdd;
+  background: #54857d40;
   border: 1px solid var(--border);
-  color: #54857d40; /* var(--link) */
+  color: #294e71; /* var(--link) */
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -336,7 +336,7 @@ iframe { max-width: 100%; }
   border: 1px solid var(--border);
   font-weight: 700;
   font-size: 14px;
-  color: #a8340f;
+  color: #294e71; /*#a8340f*/
 }
 
 .kicker { color: var(--accent); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; }
